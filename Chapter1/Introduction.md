@@ -2,7 +2,7 @@
 
 CV32E40P是一个**顺序**（发射、执行）的**四级**流水线**32位**RISC-V处理器。CV32E40P的指令集包含了一部分的自定义扩展指令集，包括有：硬件循环（hardware loops）、地址自增的访存指令（post-increment load and store）以及额外的一系列ALU指令（算术指令扩展、乘累加MAC、向量操作等等）。图1.1为处理器流水线的总体示意图。
 
-![图1.1 CV32E40P处理器的总体示意图](https://upic-groupsun.oss-cn-shenzhen.aliyuncs.com/uPic/image-20201202202031191.png)
+![图1.1 CV32E40P处理器的总体示意图](../images/CV32E40P_Block_Diagram.png)
 
 
 
@@ -36,7 +36,7 @@ CV32E40P支持以下基本指令集：
 | 自定义指令集扩展                              | 版本 | 可配置性                         |
 | --------------------------------------------- | ---- | -------------------------------- |
 | **Xcorev**：CORE-V指令集扩展                  | 1.0  | 可选，由参数`PULP_XPULP`来指定   |
-| **Xpulpcluster**：PULP集群扩展                | 1.0  | 可选，由参数`PULP_CLUSTER`来指定 |
+| **Xpulpcluster**：PULP Cluster扩展            | 1.0  | 可选，由参数`PULP_CLUSTER`来指定 |
 | **Xpulpzfinx**：PULP共享整型/浮点型寄存器扩展 | 1.0  | 可选，由参数`PULP_ZFINX`来指定   |
 
 大部分RISC-V特权级文档的内容都是可选的。目前CV32E40P支持下列RISC-V特权级文档v1.11版本的内容：
