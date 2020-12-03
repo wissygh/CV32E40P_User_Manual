@@ -42,8 +42,8 @@ CV32E40P支持以下基本指令集：
 大部分RISC-V特权级文档的内容都是可选的。目前CV32E40P支持下列RISC-V特权级文档v1.11版本的内容：
 
 - 机器模式（M-Mode）
-- 在*Control and Status Registers*一节中所列出的所有CSRs
-- 基于`NUM_MHPMCOUNTERS`参数的在*Performance Counters*一节中描述的硬件性能计数器
+- 在[*控制与状态寄存器*]()一节中所列出的所有CSRs
+- 基于`NUM_MHPMCOUNTERS`参数的在[*性能计数器*]()一节中描述的硬件性能计数器
 - 中断/异常处理支持直接模式（direct mode）以及向量模式（vectored mode）
 
 
