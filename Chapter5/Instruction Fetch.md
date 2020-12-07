@@ -28,6 +28,6 @@
 
 指令总线接口遵循OBI（Open Bus Interface，开放总线接口）协议，可以参照[这里](https://github.com/openhwgroup/core-v-docs/blob/master/cores/cv32e40p/OBI-v1.0.pdf)来查看协议的具体信息。CV32E40P的取指接口并没有实现下列可选的OBI信号：`we`、`be`、`wdata`、`auser`、`wuser`、`aid`、`rready`、`err`、`ruser`以及`rid`。CV32E40P取指接口可以触发2次连续的传输事务（two outstanding transactions）。图5.1以及5.2展示了协议的波形图。
 
-![5.1 连续内存传输](../images/obi_instruction_basic.svg)
+![图5.1 连续内存传输](../images/obi_instruction_basic.svg)
 
 ![图5.2 多事务传输](../images/obi_instruction_multiple_outstanding.svg)
